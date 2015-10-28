@@ -1,0 +1,287 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,700,500,600,300);
+@import "animate.css";
+/*========================================================
+                      Main Styles
+=========================================================*/
+.badge {
+  background: none;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (max-width: 991px) {
+  .clearboth {
+    clear: both;
+  }
+}
+.p__mod {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1199px) {
+  .p__mod {
+    font-size: 14px;
+  }
+}
+.md-add {
+  margin-top: -7px;
+}
+.md-add2 {
+  margin-top: -2px;
+}
+.lh18 {
+  line-height: 18px;
+}
+/*========================================================
+                      Main Layout
+=========================================================*/
+* + .row {
+  margin-top: 45px;
+}
+.row + * {
+  margin-top: 30px;
+}
+.row + .row {
+  margin-top: 30px;
+}
+* + .p__mod {
+  margin-top: 15px;
+}
+* + p {
+  margin-top: 8px;
+}
+* + .btn {
+  margin-top: 20px;
+}
+p + .btn {
+  margin-top: 44px;
+}
+* + .btn-link {
+  margin-top: 60px;
+}
+p + .btn-sm {
+  margin-top: 35px;
+}
+.row + .btn {
+  margin-top: 119px;
+}
+* + h3 {
+  margin-top: 24px;
+}
+h2 + h3 {
+  margin-top: 40px;
+}
+h2 + img {
+  margin-top: 47px;
+}
+h2 + article {
+  margin-top: 33px;
+}
+p + .marked-list {
+  margin-top: 25px;
+}
+h2 + .index-list {
+  margin-top: 43px;
+}
+h2 + blockquote {
+  margin-top: 46px;
+}
+* + .offs {
+  margin-top: 52px;
+}
+p + .offs.btn {
+  margin-top: 32px;
+}
+.thumbnail + .offs {
+  margin-top: 36px;
+}
+* + .offs2 {
+  margin-top: 60px;
+}
+h2 + .address {
+  margin-top: 72px;
+}
+* + .mfControls .btn {
+  margin-top: 31px;
+}
+/*=======================================================
+                        Components
+=========================================================*/
+/*==================      Box      ======================*/
+.box:before,
+.box:after {
+  content: " ";
+  display: table;
+}
+.box:after {
+  clear: both;
+}
+.box:before,
+.box:after {
+  content: " ";
+  display: table;
+}
+.box:after {
+  clear: both;
+}
+.box_aside {
+  float: left;
+}
+.box_aside img {
+  margin-right: 23px;
+  margin-top: -30px;
+}
+.box_cnt__no-flow {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .box_aside {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .box_aside span {
+    left: 10%;
+  }
+  .box_cnt__no-flow {
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .box_aside {
+    float: none;
+    padding-left: 116px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/*==================    Cont-info  ======================*/
+.contact-info {
+  max-width: 270px;
+  margin-top: 21px;
+}
+.contact-info:before,
+.contact-info:after {
+  content: " ";
+  display: table;
+}
+.contact-info:after {
+  clear: both;
+}
+.contact-info:before,
+.contact-info:after {
+  content: " ";
+  display: table;
+}
+.contact-info:after {
+  clear: both;
+}
+@media (max-width: 500px) {
+  .contact-info {
+    margin: 20px auto;
+  }
+  .contact-info dl dt,
+  .contact-info dl dd {
+    float: none;
+    margin-left: 0;
+    margin-top: 2px;
+  }
+}
+.contact-info dl {
+  display: inline-block;
+}
+.contact-info dl dt {
+  float: left;
+}
+.contact-info dl dd {
+  float: right;
+  margin-left: 4px;
+}
+.contact-info dl dd,
+.contact-info dl dt {
+  font-size: 14px;
+  line-height: 15px;
+}
+.contact-info dt + dd {
+  margin-top: 0px;
+}
+.contact-info dd + dt {
+  clear: both;
+  margin-top: 0;
+}
+@media (max-width: 991px) and (min-width: 767px) {
+  .contact-info dl dt,
+  .contact-info dl dd {
+    float: none;
+    margin-left: 0;
+    margin-top: 2px;
+  }
+}
+.contact-info dl + dl {
+  margin-top: 21px;
+}
+.contact-info dl + dl dd,
+.contact-info dl + dl dt {
+  font-size: 22px;
+}
+@media (max-width: 1199px) {
+  .contact-info dl + dl dd,
+  .contact-info dl + dl dt {
+    font-size: 14px;
+  }
+}
+/*==================    Address  ========================*/
+.address p a {
+  display: block;
+}
+.address * + address {
+  margin-top: 10px;
+}
+.address p + p.h4 {
+  margin-top: 30px;
+}
+.address * + .phone {
+  margin-top: 18px;
+}
+/*================     Term-list    ====================*/
+* + .term-list {
+  margin-top: 49px;
+}
+.term-list * + dt {
+  margin-top: 30px;
+}
+.term-list dt + * {
+  margin-top: 10px;
+}
+.term-list dl + * {
+  margin-top: 21px;
+}
+.term-list a[href^="mailto:"] {
+  display: inline-block;
+  margin-top: 22px;
+}
+/*==================    Progress   ======================*/
+.progress-wr {
+  width: 95.08771929824561%;
+}
+.progress {
+  height: 100%;
+}
+.progress .progress-bar {
+  color: #fff;
+  letter-spacing: -0.75px;
+  font-size: 30px;
+  padding-right: 15px;
+  line-height: 36px;
+  text-align: right;
+  font-weight: 700;
+}
+.progress + .h6 {
+  margin-top: -7px;
+}
+/*==================  404    ======================*/
+.p404 img {
+  margin-top: 10px;
+}
