@@ -1,3 +1,3 @@
-Florin Plumming
+F G N Plumbing & Heating
 
-This is a web development project for Florin's plumbing commercial website.
+This is a web development project for F G N Plumbing & Heating commercial website.
