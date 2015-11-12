@@ -6,7 +6,7 @@ if(!isset($_GET['s'])) {
 $highlight = true;//highlight results or not
 $search_in = array('html', 'htm');//allowable filetypes to search in
 $search_dir = '..';//starting directory
-$recursive = true;//should it search recursively or not
+$recursive = false;//should it search recursively or not
 define('SIDE_CHARS', 15);
 $file_count = 0;
 $search_term = mb_strtolower($_GET['s'], 'UTF-8');
