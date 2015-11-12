@@ -43,8 +43,8 @@
              <nav class="navbar navbar-default navbar-static-top ">
                  <div class="container">
                      <div class="navbar-header">
-                         <h1 class="navbar-brand text-uppercase">
-                             <a data-type='rd-navbar-brand' href="./">Plumbing <span class="text-primary">co.</span>
+                         <h1 class="navbar-brand">
+                             <a data-type='rd-navbar-brand' href="./">FGN <span class="text-primary">Plumbing & Heating</span>
                              </a>
                          </h1>
                      </div>
