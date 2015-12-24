@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Contacts</title>
+    <title>Products</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,12 +15,8 @@
     <!-- Links -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
-    <link href="css/google-map.css" rel="stylesheet">
-    <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/subscribe.css" rel="stylesheet">
-
-
-
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
 
     <!--JS-->
     <script src="js/jquery.js"></script>
@@ -59,7 +55,7 @@
                             <a href="./">Home</a>
                         </li>
                         <li class="dropdown">
-                            <a href="index-1.html">About</a>
+                            <a href="about.html">About</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#">About our products </a>
@@ -87,14 +83,14 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="index-2.html">Services</a>
+                            <a href="services.html">Services</a>
                         </li>
                         <li>
-                            <a href="index-3.html">Products</a>
+                            <a href="products.html">Products</a>
                         </li>
 
                         <li>
-                            <a href="index-4.html">Contacts</a>
+                            <a href="contacts.html">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -121,93 +117,176 @@
     =========================================================-->
 
     <main>
-        <div class="map">
-            <div id="google-map" class="map_model" data-zoom="11"></div>
-            <ul class="map_locations">
-                <li data-x="-73.9874068" data-y="40.643180">
-                    <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
-                </li>
-            </ul>
-        </div>
 
         <section class="well bg-alt">
-            <div class="container center767">
-                <div class="row offs3">
-                    <div class="col-md-4 col-xs-12 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <h2>
-                            addresses
-                        </h2>
+            <div class="container text-center">
+                <h2>our products</h2>
 
-                        <div class="address">
-                            <p class="h4 text-uppercase text-primary">address 1</p>
+                <p>Nulla est lectus, gravida sit amet dui eget, hendrerit gravida diam. Maecenas fringilla eget magna
+                    non biben
+                    <br/>
+                    duis sagittis placerat diam ut maximus et magnis dis parturient montes.</p>
 
-                            <address> 8901 Marmora Road, Glasgow, D04 89GR.
-                            </address>
+                <div class="row offs">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img01_original.jpg">
+                            <img src="images/page-4_img01.jpg" alt=""/>
 
-                            <p class="phone">Telephones:
-                                <a href="callto:#">+1 800 559 6580</a>
-                                <a href="callto:#">+1 959 603 6035</a>
-                                <a href="callto:#">+1 504 889 9898 </a>
-                            </p>
-
-                            <p class="h4 text-uppercase text-primary">address 2</p>
-
-                            <address>9867 Mill Road, Cambridge, MG09 99HT.
-                            </address>
-
-                        </div>
-
+                            <span class="thumb_overlay"></span>
+                        </a>
                     </div>
 
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-                        <h2>
-                            Feedback
-                        </h2>
-                            <div class="contact-form">
-                                <form class='mailform' method="post" action="bat/rd-mailform.php">
-                                    <input type="hidden" name="form-type" value="contact"/>
-                                    <fieldset>
-                                        <label>
-                                            <input type="text"
-                                                   name="name"
-                                                   placeholder="Name"
-                                                   data-constraints="@LettersOnly @NotEmpty"/>
-                                        </label>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img02_original.jpg">
+                            <img src="images/page-4_img02.jpg" alt=""/>
 
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
 
-                                        <label>
-                                            <input type="text"
-                                                   name="email"
-                                                   placeholder="Email"
-                                                   data-constraints="@Email @NotEmpty"/>
-                                        </label>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img03_original.jpg">
+                            <img src="images/page-4_img03.jpg" alt=""/>
 
-                                        <label>
-                                            <input type="text"
-                                                   name="phone"
-                                                   placeholder="Phone"
-                                                   data-constraints="@Phone"/>
-                                        </label>
-
-
-                                        <label class="textarea">
-                          <textarea name="message" placeholder="Message"
-                                    data-constraints="@NotEmpty"></textarea>
-                                        </label>
-
-                                        <div class="mfControls">
-                                            <button class="btn btn-default btn-sm" type="submit">Send</button>
-                                            <!--<button class="btn btn-default" type="reset">Reset</button>-->
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-
-                        </div>
+                            <span class="thumb_overlay"></span>
+                        </a>
                     </div>
                 </div>
+
+                <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img04_original.jpg">
+                            <img src="images/page-4_img04.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img05_original.jpg">
+                            <img src="images/page-4_img05.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img06_original.jpg">
+                            <img src="images/page-4_img06.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img07_original.jpg">
+                            <img src="images/page-4_img07.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img08_original.jpg">
+                            <img src="images/page-4_img08.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img09_original.jpg">
+                            <img src="images/page-4_img09.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img10_original.jpg">
+                            <img src="images/page-4_img10.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img11_original.jpg">
+                            <img src="images/page-4_img11.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a class="thumb" data-fancybox-group="2" href="images/page-4_img12_original.jpg">
+                            <img src="images/page-4_img12.jpg" alt=""/>
+
+                            <span class="thumb_overlay"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="well bg-primary">
+            <div class="container center767">
+                <h2 class="text-center">All products list</h2>
+
+                <p class="text-center">Praesent dapibus metus nibh, et congue neque feugiat vitae. In scelerisque ullamcorper nisl, id maximus
+                    <br/>
+                    et malesuada fames ac ante ipsum primis in faucibus. Donec dignissim dui ex.</p>
+                <div class="row offs2">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <ul class="marked-list">
+                            <li><a href="#">Cum sociis natoque penatibus et</a></li>
+                            <li><a href="#">Magnis dis parturient montes, nascetur</a></li>
+                            <li><a href="#">Duis finibus velit et rhoncus venenatis</a></li>
+                            <li><a href="#">Phasellus nec fermentum odio</a></li>
+                            <li><a href="#">Integer egestas orci et arcu accumsa</a></li>
+                            <li><a href="#">Nec consectetur risus suscipit</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <ul class="marked-list">
+                            <li><a href="#">Cum sociis natoque penatibus et</a></li>
+                            <li><a href="#">Magnis dis parturient montes, nascetur</a></li>
+                            <li><a href="#">Duis finibus velit et rhoncus venenatis</a></li>
+                            <li><a href="#">Phasellus nec fermentum odio</a></li>
+                            <li><a href="#">Integer egestas orci et arcu accumsa</a></li>
+                            <li><a href="#">Nec consectetur risus suscipit</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+
+                        <ul class="marked-list">
+                            <li><a href="#">Cum sociis natoque penatibus et</a></li>
+                            <li><a href="#">Magnis dis parturient montes, nascetur</a></li>
+                            <li><a href="#">Duis finibus velit et rhoncus venenatis</a></li>
+                            <li><a href="#">Phasellus nec fermentum odio</a></li>
+                            <li><a href="#">Integer egestas orci et arcu accumsa</a></li>
+                            <li><a href="#">Nec consectetur risus suscipit</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax well3" data-url="images/parallax6.jpg" data-mobile="true" data-speed="0.6">
+            <div class="container text-center">
+                <p class="h1 text-uppercase">Specializing in all aspects <br/> of plumbing </p>
+                <a href="#" class="btn offs btn-primary btn-lg">Learn more</a>
+            </div>
+        </section>
 
     </main>
 
@@ -298,7 +377,7 @@
         <section class="copyright text-center">
             <p class="rights text-primary">
                 &#169; <span id="copyright-year"></span> FGN PLUMBING & HEATING
-                <a href="index-5.html">Privacy Policy</a>
+                <a href="privacy.html">Privacy Policy</a>
             </p>
         </section>
 

@@ -7,15 +7,20 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Page 404</title>
+    <title>Contacts</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/search.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/google-map.css" rel="stylesheet">
+    <link href="css/contact-form.css" rel="stylesheet">
     <link href="css/subscribe.css" rel="stylesheet">
+
+
+
 
     <!--JS-->
     <script src="js/jquery.js"></script>
@@ -36,8 +41,8 @@
 <body>
 <div class="page">
     <!--========================================================
-                                HEADER
-      =========================================================-->
+                              HEADER
+    =========================================================-->
     <header class="header__mod">
         <div id="stuck_container" class="stuck_container">
             <nav class="navbar navbar-default navbar-static-top ">
@@ -94,7 +99,18 @@
                     </ul>
                 </div>
             </nav>
+            <div class="container srch">
+                <a class="search-form_toggle" href="#"></a>
 
+                <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+                    <label class="search-form_label">
+                        <input class="search-form_input" type="text" name="s" autocomplete="off"
+                               placeholder="Search.."/>
+                        <span class="search-form_liveout"></span>
+                    </label>
+                    <button class="search-form_submit fa-search" type="submit"></button>
+                </form>
+            </div>
         </div>
 
     </header>
@@ -105,40 +121,91 @@
     =========================================================-->
 
     <main>
-        <section class="well bg-alt p404">
+        <div class="map">
+            <div id="google-map" class="map_model" data-zoom="11"></div>
+            <ul class="map_locations">
+                <li data-x="-73.9874068" data-y="40.643180">
+                    <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+                </li>
+            </ul>
+        </div>
+
+        <section class="well bg-alt">
             <div class="container center767">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <img src="images/404-page.jpg" alt=""/>
-                    </div>
+                <div class="row offs3">
+                    <div class="col-md-4 col-xs-12 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <h2>
+                            addresses
+                        </h2>
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h2>Sorry<br/>
-                            Page not found</h2>
+                        <div class="address">
+                            <p class="h4 text-uppercase text-primary">address 1</p>
 
-                        <p>Aliquam et gravida massa. Class aptent taciti sociosqu ad litora torquent
-                            nostra, per inceptos himenaeos. Vestibulum in sagittis nulla.
-                            <br/><br/><br/><br/>
-                        The page you are looking for might have been removed, had its name changed, or is temporarily
-                            unavailable. Please try using our search box below to look for information on the
-                            website.</p>
+                            <address> 8901 Marmora Road, Glasgow, D04 89GR.
+                            </address>
 
-                        <div class="search-form__mod">
-                            <form class="search-form" action="search.php" method="GET"
-                                  accept-charset="utf-8">
-                                <label class="search-form_label">
-                                    <input class="search-form_input" type="text" name="s" autocomplete="off"
-                                           placeholder=" "/>
-                                    <span class="search-form_liveout"></span>
-                                </label>
-                                <button class="btn btn-default btn-sm" type="submit">Search</button>
-                            </form>
+                            <p class="phone">Telephones:
+                                <a href="callto:#">+1 800 559 6580</a>
+                                <a href="callto:#">+1 959 603 6035</a>
+                                <a href="callto:#">+1 504 889 9898 </a>
+                            </p>
+
+                            <p class="h4 text-uppercase text-primary">address 2</p>
+
+                            <address>9867 Mill Road, Cambridge, MG09 99HT.
+                            </address>
+
                         </div>
 
+                    </div>
 
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <h2>
+                            Feedback
+                        </h2>
+                            <div class="contact-form">
+                                <form class='mailform' method="post" action="bat/rd-mailform.php">
+                                    <input type="hidden" name="form-type" value="contact"/>
+                                    <fieldset>
+                                        <label>
+                                            <input type="text"
+                                                   name="name"
+                                                   placeholder="Name"
+                                                   data-constraints="@LettersOnly @NotEmpty"/>
+                                        </label>
+
+
+                                        <label>
+                                            <input type="text"
+                                                   name="email"
+                                                   placeholder="Email"
+                                                   data-constraints="@Email @NotEmpty"/>
+                                        </label>
+
+                                        <label>
+                                            <input type="text"
+                                                   name="phone"
+                                                   placeholder="Phone"
+                                                   data-constraints="@Phone"/>
+                                        </label>
+
+
+                                        <label class="textarea">
+                          <textarea name="message" placeholder="Message"
+                                    data-constraints="@NotEmpty"></textarea>
+                                        </label>
+
+                                        <div class="mfControls">
+                                            <button class="btn btn-default btn-sm" type="submit">Send</button>
+                                            <!--<button class="btn btn-default" type="reset">Reset</button>-->
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 

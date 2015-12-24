@@ -50,48 +50,48 @@
                      </div>
 
                      <ul class="navbar-nav sf-menu" data-type="navbar">
-                         <li>
-                             <a href="./">Home</a>
-                         </li>
-                         <li class="dropdown">
-                             <a href="index-1.html">About</a>
-                             <ul class="dropdown-menu">
-                                 <li>
-                                     <a href="#">Quisque nulla </a>
-                                 </li>
-                                 <li>
-                                     <a href="#">Vestibulum libero nis</a>
-                                 </li>
-                                 <li>
-                                     <a class="act" href="#">Porta vel scelerisque</a>
-                                     <ul class="dropdown-menu">
-                                         <li>
-                                             <a href="#">Latest</a>
-                                         </li>
-                                         <li>
-                                             <a href="#">Archive</a>
-                                         </li>
-                                     </ul>
-                                 </li>
-                                 <li>
-                                     <a href="#">Malesuada at neque</a>
-                                 </li>
-                                 <li>
-                                     <a href="#">Vivamus eget nibh </a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>
-                             <a href="index-2.html">Services</a>
-                         </li>
-                         <li>
-                             <a href="index-3.html">Products</a>
-                         </li>
+                        <li class="active">
+                            <a href="./">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="about.html">About</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">About our products </a>
+                                </li>
+                                <li>
+                                    <a href="#">About our services</a>
+                                </li>
+                                <li>
+                                    <a class="act" href="#">Porta vel scelerisque</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Latest</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Archive</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Malesuada at neque</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vivamus eget nibh </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
 
-                         <li>
-                             <a href="index-4.html">Contacts</a>
-                         </li>
-                     </ul>
+                        <li>
+                            <a href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
                  </div>
              </nav>
              <div class="container srch">
@@ -219,7 +219,7 @@
          <section class="copyright text-center">
              <p class="rights text-primary">
                  &#169; <span id="copyright-year"></span> PLUMBING co.
-                 <a href="index-5.html">Privacy Policy</a>
+                 <a href="privacy.html">Privacy Policy</a>
              </p>
          </section>
 
